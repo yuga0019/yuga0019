@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="26.709846">
+<testcase classname="Adactin Hotel Reservation" name="Verifying Adactin login with valid credentials" time="26.709846">
+<system-out><![CDATA[Given I want to enter into Adactin page.....................................passed
+When I should login "yugasri19" and "Saibaba@1991"..........................passed
+And I should search hotel "Sydney" and "Hotel Creek" and "Standard" and "1 - One" and "23/09/2021" and "24/09/2021" and "1 - One" and "0 - None".passed
+And I should select hotel...................................................passed
+And I should book hotel "Yugasri" and "Karthi" and "India" and "1234567812345678" and "American Express" and "January" and "2022" and "123".passed
+Then I should print the order number........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

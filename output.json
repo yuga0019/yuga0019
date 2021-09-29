@@ -1,0 +1,173 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Verifying Adactin login with valid credentials",
+        "description": "",
+        "id": "adactin-hotel-reservation;verifying-adactin-login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 38969896749,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I want to enter into Adactin page",
+            "match": {
+              "location": "LoginPageStep.loginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5652263157,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should login \"yugasri19\" and \"Saibaba@1991\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"yugasri19\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Saibaba@1991\"",
+                  "offset": 31
+                }
+              ],
+              "location": "LoginPageStep.credential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5477526781,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should search hotel \"Sydney\" and \"Hotel Creek\" and \"Standard\" and \"1 - One\" and \"23/09/2021\" and \"24/09/2021\" and \"1 - One\" and \"0 - None\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Standard\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"23/09/2021\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"24/09/2021\"",
+                  "offset": 99
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 116
+                },
+                {
+                  "val": "\"0 - None\"",
+                  "offset": 130
+                }
+              ],
+              "location": "LoginPageStep.search(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3100879635,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should select hotel",
+            "match": {
+              "location": "LoginPageStep.select()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4196115123,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should book hotel \"Yugasri\" and \"Karthi\" and \"India\" and \"1234567812345678\" and \"American Express\" and \"January\" and \"2022\" and \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yugasri\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Karthi\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"India\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"1234567812345678\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"American Express\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"January\"",
+                  "offset": 105
+                },
+                {
+                  "val": "\"2022\"",
+                  "offset": 119
+                },
+                {
+                  "val": "\"123\"",
+                  "offset": 130
+                }
+              ],
+              "location": "LoginPageStep.booking(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3608075688,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should print the order number",
+            "match": {
+              "location": "LoginPageStep.orderNumber()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Adactin Hotel Reservation",
+    "description": "",
+    "id": "adactin-hotel-reservation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/LoginPage.feature",
+    "tags": []
+  }
+]
